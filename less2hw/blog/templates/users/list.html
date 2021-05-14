@@ -5,12 +5,12 @@
 {% block body %}
 <h1>Список пользователей</h1>
 <ul>
-    {% for user_id in users %}
+    {% for user in users %}
 <li>
     <a href="
-    {{ url_for('users_bp.details', user_id=user_id) }}
+    {{ url_for('users_bp.details', user_id=user['id']) }}
     ">
-    {{ users[user_id] }}
+    {{ user['first_name'] }} {{ user['last_name'] }} ({{ user['user_name'] }})
 </a></li>
     {% endfor %}
 </ul>
