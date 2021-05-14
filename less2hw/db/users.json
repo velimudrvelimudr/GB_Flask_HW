@@ -1,0 +1,25 @@
+[
+    {
+        "id":1,
+        "user_name":"velimudr",
+        "first_name":"Михаил",
+        "last_name":"Духонин"
+    },
+    {
+        "id":2,
+        "user_name":"belka",
+        "first_name":"Мария",
+        "last_name":"Иванова"
+    },
+    {"id":3,
+        "user_name":"zver",
+        "first_name":"Василий",
+        "last_name":"Александров"
+    },
+    {
+        "id":4,
+        "user_name":"lisa",
+        "first_name":"Лена",
+        "last_name":"Михайлова"
+    }
+]
