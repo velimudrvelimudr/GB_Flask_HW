@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+<h1>{{ title }}</h1>
+<ul>
+    {% for art in articles %}
+<li><a href="{{ url_for('articles_bp.article_page', article_id=art['id']) }}">{{ art['title'] }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
