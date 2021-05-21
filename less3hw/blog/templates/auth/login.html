@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Войти на сайт
+{% endblock %}
+
+{% block body %}
+<h1>Войти как пользователь:</h1>
+<p>
+    {% if error %}
+    {{ error }}
+    {% endif %}
+</p>
+
+<form method="POST">
+    <label for="input_username">Введите имя пользователя:</label>
+    <input
+    type="text"
+    name="username"
+    placeholder="Гость"
+    id="input_username"
+    required>
+    <button type="submit">Войти</button>
+</form>
+{% endblock %}
